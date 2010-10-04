@@ -12,7 +12,7 @@ Then clone this repository:
 
 Finally, create a link to the new configuration file:
 
-    ln -s ~/.vimrc ~/.vim/vimrc
+    ln -s ~/.vim/vimrc ~/.vimrc
 
 Acknowledgements
 ================
