@@ -9,7 +9,9 @@ set backspace=indent,eol,start " Backspace over anything
 set nowrap                 " Disable word-wrapping
 set encoding=utf-8         " Enable unicode support
 
-set autowrite  " Writes on make/shell commands
+set autowrite              " Writes on make/shell commands
+
+set timeoutlen=250          " lower timeout for two-key mappings
 
 " ruler
 set ruler
@@ -49,10 +51,8 @@ set wildmode=full          " Enable command-line tab completion
 " Theme
 set t_Co=16                " Enable 16 colors in Terminal
 syntax on                  " Enable syntax highlighting
- 
-color railscasts
 
-" nmap <silent> <Leader>p :NERDTreeToggle<CR>
+color railscasts
 
 " Searching
 set incsearch   " enable incremental search
@@ -64,6 +64,8 @@ set gdefault    " Assume /g flag on :s searches
 " Folding
 set foldmethod=indent      " fold based on indent
 set nofoldenable           " Disable folding by default
+
+" Mappings
 
 " Paste yanked text
 noremap gp "+p
@@ -79,15 +81,28 @@ xnoremap m $h
 " v brings you out of visual mode
 xnoremap v <esc>
 
-" Much easier than reaching for escape
+" Use jj instead of escape
 inoremap jj <esc>
 
-let g:browser = 'firefox -new-tab '     
+map # gc    " comment
+map ## gC   " uncomment
+
+map <F3> gL " toggle filepane
+map <F4> gl " toggle bufpane
+
+" Toggle search highlight
+map <F10> :set hlsearch!<CR>
+imap <F10> <ESC>:set hlsearch!<CR>a
+
+" Break the undo chain on every Space
+imap <Space> <Space><C-g>u
+
+let g:browser = 'firefox -new-tab '
 " Open the Ruby ApiDock page for the word under cursor, in a new Firefox tab
 function! OpenRubyDoc(keyword)
   let url = 'http://apidock.com/ruby/'.a:keyword
   exec '!'.g:browser.' '.url.' &'
-endfunction           
+endfunction
 noremap RB :call OpenRubyDoc(expand('<cword>'))<CR>
 
 " Open the Rails ApiDock page for the word under cursos, in a new Firefox tab
