@@ -18,3 +18,4 @@ Acknowledgements
 ================
 
 Most of this work is heavily based on [Michael Sander](http://github.com/msanders)'s [vim-files](http://github.com/msanders/vim-files).
+Most snippets were copied from [Scrooloose](http://github.com/scrooloose)'s [snipmate-snippets](http://github.com/scrooloose/snipmate-snippets) project.

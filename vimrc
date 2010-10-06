@@ -65,6 +65,8 @@ set gdefault    " Assume /g flag on :s searches
 set foldmethod=indent      " fold based on indent
 set nofoldenable           " Disable folding by default
 
+let g:snips_author = 'Matías Flores'
+
 " Mappings
 
 " Paste yanked text
