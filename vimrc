@@ -1,4 +1,7 @@
-" Author: Matías Flores (mflores [at] atlanware [dot] com)
+" File: .vimrc
+" Author: Matías Flores
+" Description: My personal configuration for vim
+" Last Modified: october 06, 2010
 
 " Disable backups & swap files
 set nobackup
