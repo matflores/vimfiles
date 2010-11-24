@@ -95,9 +95,13 @@ map ## gC   " uncomment
 map <F3> gL " toggle filepane
 map <F4> gl " toggle bufpane
 
+" Open wiki
+map <F10> <Leader>ww
+imap <F10> <ESC><Leader>ww
+
 " Toggle search highlight
-map <F10> :set hlsearch!<CR>
-imap <F10> <ESC>:set hlsearch!<CR>a
+map <F11> :set hlsearch!<CR>
+imap <F11> <ESC>:set hlsearch!<CR>a
 
 " Break the undo chain on every Space
 imap <Space> <Space><C-g>u
