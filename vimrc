@@ -72,7 +72,10 @@ let g:snips_author = 'Matías Flores'
 
 " Mappings
 
-" Paste yanked text
+" Copy text to system clipboard
+noremap gy "+y
+
+" Paste yanked text from system clipboard
 noremap gp "+p
 noremap gP "+P
 
