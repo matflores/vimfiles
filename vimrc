@@ -95,7 +95,7 @@ inoremap jj <esc>
 map # gc    " comment
 map ## gC   " uncomment
 
-map <F3> gL " toggle filepane
+map <F3> :NERDTreeToggle<CR>
 map <F4> gl " toggle bufpane
 
 " Open wiki
