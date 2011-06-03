@@ -5,14 +5,16 @@ First, backup your existing .vim directory and configuration files:
 
     mv ~/.vim ~/.vim-backup
     mv ~/.vimrc ~/.vimrc-backup
+    mv ~/.gvimrc ~/.gvimrc-backup
 
 Then clone this repository:
 
     git clone git://github.com/matflores/vimfiles.git ~/.vim
 
-Finally, create a link to the new configuration file:
+Finally, create links to the new configuration files:
 
     ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/gvimrc ~/.gvimrc
 
 Acknowledgements
 ================

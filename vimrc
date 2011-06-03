@@ -16,6 +16,9 @@ set autowrite              " Writes on make/shell commands
 
 set timeoutlen=250          " lower timeout for two-key mappings
 
+" disable beeps
+set visualbell t_vb=
+
 " ruler
 set ruler
 set rulerformat=%l:%c ruler " Display current column/line in bottom right
