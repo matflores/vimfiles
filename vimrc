@@ -98,16 +98,25 @@ inoremap jj <esc>
 map # gc    " comment
 map ## gC   " uncomment
 
+" Toggle search highlight
+map <F2> :set hlsearch!<CR>
+imap <F2> <ESC>:set hlsearch!<CR>a
+
+" Files / buffers
 map <F3> :NERDTreeToggle<CR>
 map <F4> gl " toggle bufpane
 
-" Open wiki
-map <F10> <Leader>ww
-imap <F10> <ESC><Leader>ww
-
-" Toggle search highlight
-map <F11> :set hlsearch!<CR>
-imap <F11> <ESC>:set hlsearch!<CR>a
+" Vimwiki key bindings
+" F10 - Open wiki's index
+" F12 - Open diary note
+" <C-j> - next day
+" <C-k> - prev day
+map <F10> :VimwikiIndex<CR>
+imap <F10> <ESC>:VimwikiIndex<CR>
+map <F12> :VimwikiMakeDiaryNote<CR>
+imap <F12> <ESC>:VimwikiMakeDiaryNote<CR>
+map <C-j> <C-Up>
+map <C-k> <C-Down>
 
 " Break the undo chain on every Space
 imap <Space> <Space><C-g>u
