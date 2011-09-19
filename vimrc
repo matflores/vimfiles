@@ -107,12 +107,15 @@ map <F3> :NERDTreeToggle<CR>
 map <F4> gl " toggle bufpane
 
 " Vimwiki key bindings
-" F10 - Open wiki's index
+" F10 - Open wiki's index page
+" F11 - Open wiki's today page
 " F12 - Open diary note
 " <C-j> - next day
 " <C-k> - prev day
 map <F10> :VimwikiIndex<CR>
 imap <F10> <ESC>:VimwikiIndex<CR>
+map <F11> :VimwikiIndex<CR>:VimwikiGoto Today<CR>
+imap <F11> <ESC>:VimwikiIndex<CR>:VimwikiGoto Today<CR>
 map <F12> :VimwikiMakeDiaryNote<CR>
 imap <F12> <ESC>:VimwikiMakeDiaryNote<CR>
 map <C-j> <C-Up>
